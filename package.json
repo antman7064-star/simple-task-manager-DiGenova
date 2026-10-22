@@ -1,0 +1,14 @@
+{
+  "name": "simple-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A beginner Node.js and Express REST API with a vanilla JavaScript frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f7f6">
+    <title>Task Manager | REST API Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">REST API PRACTICE</p>
+            <h1>Task Manager</h1>
+            <p class="subtitle">Built by: Your Name</p>
+        </header>
+
+        <form id="task-form">
+            <label class="visually-hidden" for="task-input">New task</label>
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What needs to be done?"
+                required
+                autocomplete="off"
+                maxlength="200"
+            >
+            <button class="add-button" type="submit">Add task</button>
+        </form>
+
+        <section class="tasks-section" aria-labelledby="tasks-heading">
+            <div class="list-heading">
+                <h2 id="tasks-heading">Your tasks</h2>
+                <span id="task-count" class="task-count">Loading...</span>
+            </div>
+            <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+            <ul id="task-list" class="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
